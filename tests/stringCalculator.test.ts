@@ -6,9 +6,14 @@ describe("String Calculator", () => {
     expect(add("")).toBe(0);
   });
 
-  // second test case
+  //second test case
   it("returns number itself for single number", () => {
     expect(add("2")).toBe(2)
+  })
+
+  //third test case
+  it("returns sum of two comma-seperated numbers", () => {
+    expect(add("1,4")).toBe(5)
   })
 
 });
