@@ -21,4 +21,9 @@ describe("String Calculator", () => {
   expect(() => add("-1,4,-2")).toThrow("negative numbers not allowed -1,-2");
 });
 
+// fifth test case
+it("handles newline as a delimiter along with comma", () => {
+    expect(add("1\n2,3")).toBe(6);
+  });
+
 });
