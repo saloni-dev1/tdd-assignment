@@ -26,4 +26,10 @@ it("handles newline as a delimiter along with comma", () => {
     expect(add("1\n2,3")).toBe(6);
   });
 
+  // sixth test case
+  it("supports custom delimiter", () => {
+    expect(add("//;\n1;2")).toBe(3);
+  });
+  
+
 });
