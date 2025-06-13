@@ -15,5 +15,10 @@ describe("String Calculator", () => {
   it("returns sum of two comma-seperated numbers", () => {
     expect(add("1,4")).toBe(5)
   })
+  
+  //fourth test case
+  it("throws an error if negative numbers are included", () => {
+  expect(() => add("-1,4,-2")).toThrow("negative numbers not allowed -1,-2");
+});
 
 });
